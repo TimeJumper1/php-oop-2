@@ -1,15 +1,15 @@
 <?php
-class User{
+class User {
     public $nome;
 
-    public $status = normale;
+    public $status = 'normale';
 
     public $carrello = [];
 
-    public function __construct($_nome, $_status, ) {
+    public function __construct($_nome ) {
         $this->nome = $_nome;
-        $this->status = $_status;
-        ;
+
+        
     }
 }
 
