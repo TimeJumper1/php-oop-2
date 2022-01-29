@@ -11,6 +11,17 @@ class User {
 
         
     }
+    public function aggiungiProdotto($prodotto) {
+        $this->carrello[] = $prodotto;
+        
+    }
+    public function premiumDiscount($test) {
+        if($this->status = 'premium') {
+            $this->prezzo = $prezzo - ( ($prezzo * 20) /100);
+            
+        }
+        
+    }
 }
 
 ?>

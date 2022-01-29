@@ -10,6 +10,11 @@ $test = new Prodotto(20 , 'shampoo al miele', 'si');
 $testM = new Medicinale(20 , 'oki', 'si', 'uso comune' , 'no');
 
 $testU = new User('mario');
+$testU->status = 'premium';
+$testU->aggiungiProdotto($test);
+$testU->premiumDiscount($test);
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,6 +25,8 @@ $testU = new User('mario');
     <title>Document</title>
 </head>
 <body>
-    
+    <div>
+        <h1>il carrello <?php echo $carrello ?></h1>
+    </div>
 </body>
 </html>
